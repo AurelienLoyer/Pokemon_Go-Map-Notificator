@@ -1,0 +1,5 @@
+
+<google-map id="gmap" [styles]="styles" show-center-marker libraries="places" [latitude]="latMe" [longitude]="lngMe" [zoom]="zoom">
+	<google-map-marker class="gmapMarker" [latitude]="me.lat" [longitude]="me.lng"  [icon]="me.icon"></google-map-marker>
+	<google-map-marker *ngFor="#marker of markers" class="gmapMarker" [latitude]="marker.lat" [longitude]="marker.lng" [icon]="marker.icon"></google-map-marker>
+</google-map>
